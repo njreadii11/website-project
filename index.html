@@ -17,3 +17,18 @@
 
 </body>
 </html>
+<button onclick="showAbout()">About Me</button>
+
+<div id="about" style="display:none; margin-top:20px;">
+  <h2>About Me</h2>
+  <p><strong>Name:</strong> Aadil Shabir</p>
+  <p><strong>From:</strong> Sopore</p>
+  <p><strong>Branch:</strong> Electronics and Communication Engineering</p>
+  <p><strong>College:</strong> Kashmir Govt Polytechnic College, Srinagar</p>
+</div>
+
+<script>
+function showAbout() {
+  document.getElementById("about").style.display = "block";
+}
+</script>
