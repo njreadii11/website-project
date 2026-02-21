@@ -19,3 +19,180 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+
+    <style>
+        body {
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding-top: 100px;
+        }
+
+        h1 {
+            color: darkblue;
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 20px;
+            color: black;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: navy;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to My Website</h1>
+    <p>This is my college mini project.</p>
+    <button>Click Me</button>
+
+</body>
+</html>
+index.html
+about.html
+contact.html
+style.css
+script.js
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h2 class="logo">MySite</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1 class="animate">Welcome to My Website</h1>
+        <p>College Mini Project</p>
+        <img src="https://picsum.photos/400" alt="Sample Image">
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h2 class="logo">MySite</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <h1>About Us</h1>
+        <p>This is about page of our mini project.</p>
+    </section>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h2 class="logo">MySite</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <h1>Contact Us</h1>
+        <p>Email: example@gmail.com</p>
+    </section>
+
+</body>
+</html>
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+}
+
+/* Navbar */
+nav {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+/* Hero Section */
+.hero {
+    padding: 50px;
+}
+
+.hero img {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Animation */
+.animate {
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+console.log("Website Loaded Successfully!");
